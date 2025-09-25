@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kingdom's Quest - Choose or Avoid</title>
+  <link rel="stylesheet" href="game.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Medieval Background Elements -->
+  <div class="castle-background"></div>
+  <div class="parchment-overlay"></div>
+  <div class="medieval-elements">
+    <div class="dragon dragon-left">🐉</div>
+    <div class="dragon dragon-right">🐉</div>
+    <div class="candle candle-left">🕯️</div>
+    <div class="candle candle-right">🕯️</div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="medieval-nav">
+    <a href="rule.html" class="nav-link">📜 Forgot Rules?</a>
+    <a href="index.html" class="nav-link">🏰 Home Sweet Home</a>
+  </nav>
+
+  <!-- Main Game Container -->
+  <div class="medieval-container">
+    <!-- Left: Game Info Panel -->
+    <div class="info-panel popup">
+      <div class="header-section">
+        <h1>Kingdom's Quest</h1>
+        <h2>Choose Wisely, Brave Adventurer!</h2>
+        <div class="header-icons">
+          <i class="icon fas fa-crown"></i>
+          <i class="icon fas fa-dragon"></i>
+          <i class="icon fas fa-shield-alt"></i>
+        </div>
+      </div>
+      
+      <div class="game-description">
+        <h3>⚔️ The Challenge</h3>
+        <p>Test your fortune in the royal court! Select 3 mystical cards to reveal your destiny.</p>
+      </div>
+
+      <div class="instructions">
+        <h3>📜 Royal Decree</h3>
+        <ul>
+          <li>Choose exactly 3 enchanted cards</li>
+          <li>Golden coins increase your treasury</li>
+          <li>Losing lives may end your quest</li>
+          <li>Zero lives means starting anew</li>
+          <li>May fortune favor the bold!</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right: Game Section -->
+    <main class="game-section popup">
+      <div class="game-header">
+        <h1 class="title">🎮 Should I Choose or Avoid?</h1>
+        <div class="royal-seal">⚜️</div>
+      </div>
+      
+      <div class="game-area">
+        <!-- JS will populate cards -->
+      </div>
+      
+      <div class="royal-commands">
+        <p class="royal-message">✨ Pick <span class="highlight">3 mystical cards</span> and test your royal fortune!</p>
+        <button id="restart" class="quest-button">🔄 Restart Quest</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
